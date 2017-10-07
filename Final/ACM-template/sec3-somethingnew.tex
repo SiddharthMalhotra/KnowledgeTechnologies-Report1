@@ -1,0 +1,53 @@
+\section{Comparison and Review}
+\label{sec-somethingnew}
+
+Precision is computed as in equation \eqref{eq:precision}.
+
+\begin{equation}
+\label{eq:precision}
+Precision = \frac{\mathit{Number\ of\ correct\ predictions}}{\mathit{Total\ number\ of\ predictions}}
+\end{equation}
+
+Recall is computed as in equation \eqref{eq:recall}.
+
+\begin{equation}
+\label{eq:recall}
+Recall = \frac{\mathit{Number\ of\ correct\ words}}{\mathit{Total\ number\ of\ words}}
+\end{equation}
+
+
+\myparagraph{LRPN Technique} Major disadvantage of LRPN strategy is execution cost is quite high. The combination of these strategies provides a much better result than when these are run in a standalone manner.
+
+Using the edit distance, we are able to find out that there are 6652 dictionary words of the 8841 tokens. We are also able to eliminate the non candidate words which are 533. Using Peter Norwig's algorithm we were able to increase the accuracy. Through n-gram technique we found that n=1 and n=2 were of our purpose, thus we made 3312 predictions. In total, 351 words were correctly predicted these techniques. Note: We include the dictionary and non candidate words in the total prediction count. Thus, the total number of predictions adds up to 10497 and correct predictions and the number of correct predictions are 7536.
+
+\begin{equation}
+\label{eq:pre}
+Precision = \frac{\mathit{Number\ of\ correct\ predictions}}{\mathit{Total\ number\ of\ predictions}} = \frac{\mathit{7536}}{\mathit{10497}} ={{71.8}}
+\end{equation}
+
+\begin{equation}
+\label{eq:rec}
+Recall = \frac{\mathit{Number\ of\ correct\ words}}{\mathit{Total\ number\ of\ words}} = \frac{\mathit{7536}}{\mathit{8841}} ={{85.2}}
+\end{equation}
+  
+\myparagraph{NLTK-SRI Technique} Substantially faster than a LRPN Technique for resolving non candidate words. Also gives a substantial increase in the accuracy.  Certain simple rules can we used to clean up the OOV words, but noisy text cleanser is useful to correct long tail of OOV's. Note: For each word, there are approximately 10 predictions thus making the file and computation size. We have scaled down this analysis to two-thirds of the token file. 
+
+\begin{equation}
+\label{eq:prec}
+Precision = \frac{\mathit{Number\ of\ correct\ predictions}}{\mathit{Total\ number\ of\ predictions}} = \frac{\mathit{5432}}{\mathit{67390}} ={{8.06}}
+\end{equation}
+
+
+Although the number of correct predictions are high, the number of predictions is large is.number. 
+
+\begin{equation}
+\label{eq:recc}
+Recall = \frac{\mathit{Number\ of\ correct\ words}}{\mathit{Total\ number\ of\ words}} = \frac{\mathit{5432}}{\mathit{6739}} ={{80.6}}
+\end{equation}
+\\
+The accuracy of NLTK-SRI technique is always above {90\%}.
+An Example (from result.txt in TextCleanser-master), if the input is 'wooow of course , i shoulda known that was comingg', the output is 'wow of course, i should known that was coming'.   
+
+
+
+

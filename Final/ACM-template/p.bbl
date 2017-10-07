@@ -1,0 +1,41 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ahmed(2015)]{lnt15b}
+B.~Ahmed.
+\newblock Lexical normalisation of twitter data.
+\newblock \emph{Science and Information Conference (SAI)}, 2015.
+\newblock URL \url{https://arxiv.org/pdf/1409.4614v4.pdf}.
+
+\bibitem[Gouws et~al.(2011)Gouws, Metzler, Cai, and Hovy]{gmctw14}
+S.~Gouws, D.~Metzler, C.~Cai, and E.~Hovy.
+\newblock Contextual bearing on linguistic variation in social media.
+\newblock \emph{Proceedings of the Workshop on Languages in Social Media},
+  pages 20--29, 2011.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=2021109.2021113}.
+
+\bibitem[Han and Baldwin(2011)]{bhtb}
+B.~Han and T.~Baldwin.
+\newblock Lexical normalisation of short text messages: Makn sens a{\#}
+  twitter.
+\newblock \emph{49th Annual Meeting of the Association for Computational
+  Linguistics}, pages 368--378, 2011.
+\newblock URL \url{http://www.aclweb.org/old_anthology/P/P11/P11-1038.pdf}.
+
+\bibitem[Max and Kalita(2010)]{kmjk}
+K.~Max and J.~Kalita.
+\newblock Syntactic normalization of twitter messages.
+\newblock \emph{International conference on natural language processing}, 2010.
+\newblock URL
+  \url{http://cs.uccs.edu/~jkalita/work/reu/REUFinalPapers2010/Kaufmann.pdf}.
+
+\bibitem[Norvig()]{pn15}
+P.~Norvig.
+\newblock How to write a spelling corrector.
+\newblock URL \url{http://norvig.com/spellcorrect.html}.
+
+\end{thebibliography}
